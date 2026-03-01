@@ -15,6 +15,8 @@ InitialB Util is a ComfyUI custom node package that provides various utility nod
 
 ### Node Collection
 
+![2026-03-02 042235](https://github.com/user-attachments/assets/50d10c44-c890-4958-92ec-264f45285c63)
+
 #### Sigma Utilities
 - 📈 **Custom Graph Sigma**: Main interactive curve editor with 12+ presets
 - 🔗 **Sigma Joiner**: Combine multiple sigma schedules with blend modes
@@ -23,18 +25,21 @@ InitialB Util is a ComfyUI custom node package that provides various utility nod
 - 🎚️ **Denoising Strength Modifier**: Control denoising for img2img workflows
 - 📋 **Preset Sigma Generator**: Quick access to common schedules
 
+![2026-03-02 042135](https://github.com/user-attachments/assets/ff48c8cb-0f2d-4166-9f2a-3f241045682f)
+
 #### Logic Nodes
 - 🔬 **Compare**: Compare two values with various operators (==, !=, <, >, <=, >=)
 - 🔬 **Int/Float/String/Bool**: Data type nodes for handling different value types
 - 🔬 **If ANY return A else B**: Conditional execution based on boolean
 - 🔬 **DebugPrint**: Print any input to console for debugging
 
+![2026-03-02 042217](https://github.com/user-attachments/assets/14ada7ed-3ed3-47fa-9b52-817197a12f6d)
+
 #### Text Tools
 - 📝 **Multi-Line String**: Input multiline text and output as single string
 - 🔗 **String Joiner**: Join multiple strings with configurable separator
 
-#### Image Collage
-- 🖼️ **Multi-Image Collage**: Concatenate multiple images with directional control (right/down)
+![2026-03-02 042252](https://github.com/user-attachments/assets/5fbc81a2-1fdb-4117-a412-23a2c7f162d2)
 
 #### Flow Control
 - 🔄 **For Loop Start/End**: Execute nodes in a loop with iteration counting
@@ -61,37 +66,6 @@ pip install -r requirements.txt
 1. Download the ZIP file from releases
 2. Extract to `ComfyUI/custom_nodes/comfyui_InitialB_Util/`
 3. Restart ComfyUI
-
-## 📁 Project Structure
-
-```
-comfyui_InitialB_Util/
-├── __init__.py              # Node registration and mappings
-├── nodes/
-│   ├── __init__.py          # Nodes module initialization
-│   ├── custom_spline_sigma.py    # Main interactive curve editor
-│   ├── sigma_joiner.py      # Sigma schedule joining
-│   ├── sigma_scaler.py      # Sigma value scaling
-│   ├── sigma_analyzer.py    # Sigma statistics
-│   ├── denoising_modifier.py     # Denoising strength control
-│   ├── preset_generator.py  # Preset sigma generation
-│   ├── logic_types.py       # Data type nodes (Int, Float, String, Bool)
-│   ├── logic_compare.py     # Comparison nodes
-│   ├── logic_conditional.py # Conditional execution nodes
-│   ├── logic_debug.py       # Debug printing nodes
-│   ├── text_multiline.py    # Multi-line string input node
-│   ├── text_joiner.py       # Multiple string joiner
-│   ├── image_collage.py     # Multi-image collage concatenation
-│   ├── flow_loop.py         # For Loop implementation
-│   ├── flow_while.py        # While Loop implementation
-│   └── utility_math.py      # Range generation and math operations
-├── js/
-│   └── extension.js         # Frontend graph editor
-├── requirements.txt         # Python dependencies
-├── pyproject.toml          # Package metadata
-├── README.md               # Documentation
-└── LICENSE                 # MIT License
-```
 
 ## 🎯 Node Reference
 
