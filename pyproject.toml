@@ -1,0 +1,31 @@
+[project]
+name = "comfyui_InitialB_Util"
+description = "ComfyUI Custom Node Package with Logic Nodes, Sigma Utilities, Text Tools, and Image Collage"
+version = "2.0.0"
+license = {text = "MIT License"}
+authors = [
+    {name = "InitialB Team"}
+]
+dependencies = [
+    "torch",
+    "numpy",
+    "scipy",
+    "Pillow",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Repository = "https://github.com/yourusername/comfyui_InitialB_Util"
+
+[tool.comfy]
+PublisherId = "initialb-util"
+DisplayName = "InitialB Util"
+Icon = "https://raw.githubusercontent.com/yourusername/comfyui_InitialB_Util/main/icon.png"
